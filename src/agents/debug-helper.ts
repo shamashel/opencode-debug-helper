@@ -103,7 +103,7 @@ stop_process(session_id="debug-123", name="app")
 export const debugHelperAgent = {
   description: DEBUG_HELPER_DESCRIPTION,
   mode: "primary" as const,
-  color: "#FF6B6B",
+  color: "#FFA500",
   prompt: DEBUG_HELPER_PROMPT,
   tools: {
     task: true,
