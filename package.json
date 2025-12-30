@@ -1,0 +1,47 @@
+{
+  "name": "opencode-debug-helper",
+  "version": "0.1.0",
+  "description": "OpenCode plugin for Cursor-style debug mode - automated project detection, instrumentation, and root cause analysis",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "opencode-debug-helper": "dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@opencode-ai/plugin": "^1.0.209",
+    "zod": "^4.1.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^3.2.4"
+  },
+  "keywords": [
+    "opencode",
+    "plugin",
+    "debugging",
+    "instrumentation",
+    "rca"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shamashel/opencode-debug-helper.git"
+  },
+  "author": "shamashel",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
