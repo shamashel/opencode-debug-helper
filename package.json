@@ -1,6 +1,6 @@
 {
   "name": "opencode-debug-helper",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "OpenCode plugin for Cursor-style debug mode - automated project detection, instrumentation, and root cause analysis",
   "type": "module",
   "main": "dist/index.js",
